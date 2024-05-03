@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<<!--! Bootsrap Link-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>My-Shopping-Card</title>
+</head>
+<body>
+<!--! Header start  --> 
+<header class="header-area">
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <button class="btn-bar">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="navbar-middle"><div class="logo">LOGO</div></div>
+            <div class="navbar-right">
+             <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                <span class="cart-items">0</span>
+                <i class="fas fa-cart-shopping"></i>
+             </button>
+            </div>
+        </div>
+    </div>
+</header>
+<!--! Header End  -->
+
+<!--! Banner Start-->
+
+<div class="banner-area">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="images/banner.png" alt="bannerimage">
+        </div>
+        <div class="banner-content">
+            <span class="banner-content-subtitle">INDOORS</span>
+            <span class="banner-content-title">See Bamboo's New Range Of Indoor Furniture</span>
+            <span class="banner-content-text">Classic meet modern living,bamboo has a fantastic range of indoor furniture,perfect for any modern home</span>
+            <a class="banner-content-link" href="#">SEE MORE</a>
+        </div>
+    </div>
+</div>
+<!--! Banner End-->
+
+<!--! Product list Start -->
+
+<div class="product-area">
+    <div class="container">
+        <h2 class="product-area-title">Featured Product</h2>
+        <div class="row" id="products-dom">
+          <!-- 
+             <div class="col-lg-4 col-md-6">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="images/product1.png" alt="product">
+                    </div>
+                    <div class="product-hover">
+                        <span class="product-title">table</span>
+                        <span class="product-price">$3000</span>
+                        <button class="btn-add-to-card">
+                            <i class="fas fa-cart-shopping"></i>               
+                        </button>
+                    </div>
+                </div>  
+            </div>
+        -->
+        
+        </div> 
+    </div>
+</div>
+<!--! Product list End -->
+
+<!--! cart list start -->
+
+<div class="offcanvas offcanvas-end" id="offcanvasRight">
+   <div class="off-canvas-header">
+    <h5>shopping Card</h5>
+    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="close"></button>
+   </div>
+   <div class="offcanvas-body">
+    <div class="shopping-card">
+        <ul class="cart-list">
+         <!--   <li class="cart-list-item">
+                <div class="cart-left">
+                    <div class="cart-left-image">
+                        <img src="images/product1.png" alt="product">
+                    </div>
+                    <div class="cart-left-info">
+                        <a class="cart-left-info-title" href="#">table</a>
+                        <span class="cart-left-info-price">$3000</span>
+                    </div>
+                </div>
+
+                <div class="cart-right">
+            <div class="cart-right-quantity">
+                <button class="quantity-minus">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <span class="quantity">0</span>
+                <button class="quantity-plus">
+                    <i class="fas fa-plus"></i>
+            </div>     
+            
+            <div class="cart-right-remove">
+                <button class="cart-remove-btn">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+                </div>
+            </li>-->
+        </ul>
+        <div class="shopping-cart-bottom">
+            <div class="total">
+                <div class="total-title">Subtotal:</div>
+                <span class="total-value">$ 0</span>
+            </div>
+            <button class="btn-clear" type="button">CLEAR</button>
+        </div>
+    </div>
+   </div>
+</div>
+
+<!--! Bootstrap JS cdn-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
